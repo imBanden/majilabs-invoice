@@ -10,7 +10,7 @@ interface TypographyProps {
 const typographyDict = {
   label: "font-semibold",
   p: "font-medium",
-  xxs: "text-[10px]",
+  xxs: "text-[11px]",
   xs: "text-[12px]",
   base: "text-[14px]",
   md: "text-[16px]",

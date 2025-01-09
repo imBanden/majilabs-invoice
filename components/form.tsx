@@ -35,7 +35,7 @@ const Form = () => {
   };
 
   return (
-    <div className="flex flex-col p-[48px] items-start w-full h-full border-r border-black/[0.07]">
+    <div className="flex flex-col p-[48px] items-start w-full h-full min-h-screen border-r border-black/[0.07]">
       <div className="flex items-center">
         <Link href={"/"}>
           <Image

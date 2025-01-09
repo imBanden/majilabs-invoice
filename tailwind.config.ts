@@ -14,6 +14,9 @@ export default {
   			foreground: 'hsl(var(--foreground))',
   			label: '#878787',
   			invoiceBlue: '#0094FF',
+			invoice: '#ebebeb',
+			'invoice-light': '#999',
+			'invoice-dark': '#696969',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
@@ -57,7 +60,19 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		backgroundImage: {
+			'blue-dots' : "url('/blue-dots-pattern.svg')"
+		},
+		keyframes: {
+			maskAnimation: {
+				'0%': { maskPosition: '0 0' },
+				'100%': { maskPosition: '1000px 1000px' },
+			  },
+		},
+		animation: {
+			maskAnimation: 'maskAnimation 120s linear infinite',
+		}
   	}
   },
   plugins: [require("tailwindcss-animate")],

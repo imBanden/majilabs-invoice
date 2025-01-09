@@ -55,9 +55,7 @@ const InvoiceDetailsStep = () => {
         />
       </button>
 
-      <div
-        className={cn("pt-4 transition-all", !optionDrawer && "opacity-0 h-0")}
-      >
+      <div className={cn("pt-4 transition-all", !optionDrawer && "opacity-0")}>
         <Input label="Discount" placeholder="0.00" />
         <Input label="Taxes" placeholder="0 %" />
       </div>
